@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kha3.css">
+    <link rel="stylesheet" href="kkr1.css">
+    <link rel="stylesheet" href="kha3.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">DVotingSys</h1>
+            <nav>
+                <ul>
+                    <li> <a href="index1.html">Set Candidate </a></li>
+                    <li><a href="index2.html">Set Candidate Constituency </a></li>
+                    <li><a href="index4.html"> Vote </a></li>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="index5.html"> Details </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-form card">
+                <h2>
+                     Set Voter Details
+                </h2>
+                 
+        <div class="form-control">
+    <input type="text" placeholder="Voter Authorization" id="bool" required>
+     </div>
+     <div class="form-control">
+  <input type="text" placeholder="Voter Id" id="V_id" required>
+     </div>
+     <div class="form-control">
+   <input type="text" placeholder="Voter Age" id="v_age" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="Voter Gender" id="v_gender">
+     </div>
+     <div class="form-control">
+   <input type="text" name="address" placeholder="Voter Unique Address" id="vadd" autocomplete="off" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="Voter Nationality" id="v_nat" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="Max votes (should be one(1))" id="v_all" required>
+     </div>
+     <div class="form-control">
+        <input type="text" placeholder="Voter Password" id="v_passwo" required>
+            </div>
+     <div class="form-control">
+     <button type="submit" value="Set voter Details" class="btn btn-primary" onclick="App.setVoter()"> SetVoter</button>
+     </div>
+ </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

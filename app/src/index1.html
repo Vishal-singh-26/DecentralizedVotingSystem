@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kkr.css">
+    <link rel="stylesheet" href="kkr1.css">
+    <link rel="stylesheet" href="kkr.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">DVotingSys</h1>
+            <nav>
+                <ul>
+                    <li> <a href="index2.html">Set Candidate Constituency </a></li>
+                    <li><a href="index3.html">Set VoterDetails</a></li>
+                    <li><a href="index4.html"> Vote </a></li>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="index5.html"> Details </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+   <section class="showcase">
+    <div class="container grid">
+        <div class="showcase-form card">
+            <h2>
+                 Set Candidate Details
+            </h2>
+             
+    <div class="form-control">
+    <input type="text" name="address" placeholder="Candidate Unique address" id="uniqueaddress"  autocomplete="off" required>
+    </div>
+    <div class="form-control">
+<input type="text" placeholder="Candidate Name" id="r_name" required>
+    </div>
+ <div class="form-control">
+    <input type="text" placeholder="Party Name" id="p_name" required>
+ </div>
+  <div class="form-control">
+<input type="text" placeholder="Party Symbol" id="p_symbol" required>
+</div>
+     <div class="form-control">
+     <input type="text" placeholder="Candidate Id" id="cid" required>
+     </div>
+     <div class="form-control">
+    <input type="text" placeholder="Candidate Age" id="c_age" required>
+     </div>
+     <div class="form-control">
+   <input type="text" placeholder="Candidate Nationality" id="nation" required>
+   </div>
+     <div  class="form-control">
+    <input type="text" placeholder="Position in party" id="pos">
+    </div>
+     <div   class="form-control">
+    <input type="text" placeholder="Candidate gender" id="gender">
+    </div>
+    <div   class="form-control" >
+    <input type="text" placeholder="votes polled so far (should be zero(0))" id="votes_polled" required>
+    </div>
+    <div   class="form-control">
+     <button type="submit"  class="btn btn-primary" onclick="App.setCandidate()">Set Candidate</button>
+     </div>
+           
+        </div>
+ </div>
+ </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
